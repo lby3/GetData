@@ -29,8 +29,8 @@ features<-sapply(features, function(x){gsub("\\(\\)","",x)})
 features<-sapply(features, function(x){gsub("BodyBody","Body",x)})
 
 #rename the names from t/f to time/fourier
-features<-sapply(features, function(x){gsub("^t","time\\.",x)})
-features<-sapply(features, function(x){gsub("^f","fourier\\.",x)})
+features<-sapply(features, function(x){gsub("^t","Time\\.",x)})
+features<-sapply(features, function(x){gsub("^f","Frequency\\.",x)})
 
 #rename Acc to accelerometer, Gyro to gyroscope
 features<-sapply(features, function(x){gsub("Acc","\\.Accelerometer\\.", x)})
